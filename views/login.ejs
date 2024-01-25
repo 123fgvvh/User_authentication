@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+
+        <h2 class="text-2xl font-bold mb-4">Login</h2>
+
+        <!-- Login Form -->
+        <form method="POST" action="/login">
+            <!-- Email Input -->
+            <div class="mb-4">
+                <label for="email" class="block text-gray-600 text-sm font-semibold mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" required>
+            </div>
+
+            <!-- Password Input -->
+            <div class="mb-4">
+                <label for="password" class="block text-gray-600 text-sm font-semibold mb-2">Password:</label>
+                <input type="password" id="password" name="password" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" required>
+            </div>
+
+            <!-- Login Options (Admin/Student) -->
+            <div class="mb-4">
+                <label class="block text-gray-600 text-sm font-semibold mb-2">Login As:</label>
+                <div class="flex items-center">
+                    <input type="radio" id="admin" name="loginType" value="admin" class="mr-2" required>
+                    <label for="admin" class="text-sm">Admin</label>
+                    <input type="radio" id="student" name="loginType" value="student" class="ml-4 mr-2" required>
+                    <label for="student" class="text-sm">Student</label>
+                </div>
+            </div>
+
+            <!-- Forgot Password Link -->
+            <div class="mb-4">
+                <a href="http://localhost:8000/forgot_password" class="text-blue-500 text-sm">Forgot Password?</a>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Login</button>
+        </form>
+
+        <!-- Sign Up Link -->
+        <div class="mt-4">
+            <p class="text-gray-600 text-sm">Don't have an account? <a href="http://localhost:8000/signup" class="text-blue-500">Sign Up</a></p>
+        </div>
+    </div>
+
+    <!-- <script>
+        function redirectToPage() {
+          window.location.href = '/signup';
+        }
+      </script> -->
+
+</body>
+</html>
+

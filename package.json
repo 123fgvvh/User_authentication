@@ -1,0 +1,19 @@
+{
+  "name": "test_project_hostel",
+  "version": "1.0.0",
+  "description": "Hostel Mangement System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sajag Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mysql2": "^3.7.1",
+    "nodemailer": "^6.9.8",
+    "randomstring": "^1.3.0"
+  }
+}
