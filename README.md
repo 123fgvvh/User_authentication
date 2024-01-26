@@ -46,9 +46,9 @@ This project is a simple user authentication system built using Node.js, Express
 git clone <repository-url>
 
 2. Install dependencies:
-        ```bash
-        `cd <project-directory>
-        npm install`
+        
+        `cd <project-directory>`
+        `npm install`
 
 3.Configuration
 Create a MySQL database and configure the connection details in `app.js`.
@@ -57,8 +57,8 @@ Set up your Gmail account and configure the Nodemailer transporter with your ema
 4.Usage
   Start the server:
   `npm start`
-  1. Visit *http://10ca1host:8000* in your web browser.
+  1. Visit *http://loca1host:8000* in your web browser.
   2. Register a new account, log in, and explore the user authentication features.
 
 5.Contributing
-  Contributions are welcome! If you find any issues or want to enhance the project, feel free to open an issue or submit a pull request.5.
+  Contributions are welcome! If you find any issues or want to enhance the project, feel free to open an issue or submit a pull request.
