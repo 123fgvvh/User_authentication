@@ -57,7 +57,7 @@ Set up your Gmail account and configure the Nodemailer transporter with your ema
 4.Usage
   Start the server:
   `npm start`
-  1. Visit *http://loca1host:8000/login* in your web browser.
+  1. Visit *http://localhost:8000/login* in your web browser.
   2. Register a new account, log in, and explore the user authentication features.
 
 5.Contributing
