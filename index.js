@@ -17,11 +17,12 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 app.use(express.urlencoded({ extended: true }));
 
+// make sure you have created a database
 const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
     database: 'students',
-    password: 'sajagbrO1',
+    password: 'your_mysql_password', // replace it with your mysql password
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0
@@ -147,10 +148,10 @@ app.post('/verify_otp/:email', async (req, res) => {
 // Send an OTP to the given email address
 // Nodemailer setup
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: 'gmail',//any email service provider , here i have wrote gmail
     auth: {
-        user: 'stg.violin@gmail.com',
-        pass: 'ohze qnef kihv gkcr',
+        user: 'your_email',
+        pass: 'your_email_password_appPassord', // app password is secondary passkey provided by email service provider
     },
 });
 
@@ -179,7 +180,7 @@ app.post('/forgot_password', async (req, res) => {
 
             // Send OTP via email
             const mailOptions = {
-                from: 'stg.violin@gmail.com',
+                from: 'your_email',
                 to: email,
                 subject: 'Password Reset OTP',
                 text: `Your OTP for password reset is: ${otp}`,
