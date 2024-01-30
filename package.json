@@ -1,7 +1,7 @@
 {
-  "name": "test_project_hostel",
+  "name": "User_Authentication",
   "version": "1.0.0",
-  "description": "Hostel Mangement System",
+  "description": "Database Management and Verfication",
   "main": "index.js",
   "type": "module",
   "scripts": {
